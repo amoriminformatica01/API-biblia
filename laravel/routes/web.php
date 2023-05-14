@@ -24,8 +24,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/',[HomeController::class,'index'])->name('home');
-Route::get('versoes',[VersoesController::class,'index'])->name('versoes');
-Route::get('versiculos',[VersiculosController::class,'index'])->name('versiculos');
-Route::get('testamentos',[TestamentosController::class,'index'])->name('testamentos');
-Route::get('livros',[LivrosController::class,'index'])->name('livros');
+Route::get('api/versoes',[VersoesController::class,'index'])->name('versoes');
+Route::get('api/versiculos',[VersiculosController::class,'index'])->name('versiculos');
+Route::get('api/testamentos',[TestamentosController::class,'index'])->name('testamentos');
+Route::get('api/livros',[LivrosController::class,'index'])->name('livros');
 
