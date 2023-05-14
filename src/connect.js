@@ -1,11 +1,17 @@
 import { createConnection } from 'mysql';
-var connection = createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '@Asj20508',
-    database: 'biblia'
+import dotenv from 'dotenv';
+
+// Configura as variáveis de ambiente
+dotenv.config();
+
+// Cria a conexão com o banco de dados
+const connection = createConnection({
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
 });
 
 connection.connect();
 
-export default connection
+export default connection;
