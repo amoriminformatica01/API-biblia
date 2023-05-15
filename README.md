@@ -30,7 +30,6 @@ composer install
 
 4. Copie o arquivo de configuração de exemplo e configure suas variáveis de ambiente:
 
-cp .env.example .env
 
 
 
